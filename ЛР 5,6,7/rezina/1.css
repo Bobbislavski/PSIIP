@@ -1,0 +1,123 @@
+.column1 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    gap: 20px;
+    border: 0;
+}
+
+.column1 div {
+    width: 2000px;
+    height: 125px;
+}
+
+
+div {
+    border-radius: 0.5px;
+    border-color: black;
+    border-style: solid;
+}
+
+.column2 {
+    justify-content: center;
+    display: flex;
+    flex-flow:  row nowrap;
+    gap: 23px;
+    border: 0;
+}
+
+.column2 div {
+    border-radius: 0.5px;
+    border-color: black;
+    border-style: solid;
+    width: 2000px;
+    height: 300px;
+}
+
+.container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "b b2 b2 b3"
+      "b5 b5 b4 b3"
+      "b6 b6 b4 b3";
+      height: 350px;
+      border: none;
+  }
+  
+  .b { grid-area: b; }
+  
+  .b2 { grid-area: b2; }
+  
+  .b3 { grid-area: b3; }
+  
+  .b4 { grid-area: b4; }
+  
+  .b5 { grid-area: b5; }
+  
+  .b6 { grid-area: b6; }
+  
+
+.column4 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    gap: 100px;
+    border: 0;
+}
+
+.column5 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    border: 0;
+}
+
+.b3 {
+    background-image: url("фотка.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.column1, .column2, .column4, .column5, .container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    * {
+        font-size: 20px;
+        color: rgb(231, 107, 107);
+        width: 100%;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-auto-flow: row;
+        grid-template-areas:
+          "b"
+          "b2"
+          "b3"
+          "b4"
+          "b5"
+          "b6";
+    }
+    .b3{
+        height: 150px;
+        width: 150px;
+        margin: 0px auto;
+    }
+    .column1, .column2, .column4, .column5 {
+        flex-flow: column nowrap;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    .column1 div, .column2 div {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">  <!--использование внешнего файла -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт визитка</title>
+    <style>
+       @import url("style.css");
+        #tabl{   
+            border-style: solid;  
+            border: 1px;
+        }
+    </style>  
+</head>
+<body>
+<a id="bottom"></a> <!-- Якорь для быстрого скролла вниз -->
+
+<h1>Сайт визитка</h1>
+<h2>Коротко обо мне</h2>
+<!-- Информация о пользователе -->
+Зовут <em>Роберт</em>, живу в <u>Гродно</u>, люблю играть в теннис, воллейбол, играю в компьютерные игры, учусь в ГГПК, 3 курс, <b>17 лет</b>.
+<h2 style = "font-size: 50px;">Факты обо мне</h2>
+<!-- Список фактов о пользователе -->
+<ul>
+    <li>Учусь на программиста</li>
+    <li>Уровень английского - А2</li>
+    <li>Живу в Гродно</li>
+    <li>Люблю жизнь</li>
+</ul>
+
+<h2>Любимые игры</h2>
+<!-- Список любимых игр -->
+<ul>
+    <li>Albion online</li>
+    <li>Wild rift</li>
+    <li>Dota 2</li>
+    <li>Rise of kingdoms</li>
+</ul>
+
+<img src="https://hawk.live/storage/post-images/magnus-dota-2-2553.jpg" alt="Изображение игры Dota 2">
+
+
+<video src="видео.mp4" controls></video>
+
+
+<audio src="трек.mp3" controls></audio>
+
+<!-- Таблица контактов -->
+<table id = "tabl">
+    <tr>
+        <td><a href="https://t.me/bobbislav">Telegram</a></td>
+        <td><a href="https://vk.com/liltrober">VK</a></td>
+        <td><a href="https://html5book.ru/html-tags/">Руководство</a></td>
+    </tr>
+</table>
+
+<!-- Форма регистрации -->
+<form action="/signup" method="POST">
+    <h2>Форма регистрации</h2>
+    <p>
+        <label>Имя</label>
+        <input type="text" name="first_name">
+    </p>
+    <p>
+        <label>Фамилия</label>
+        <input type="text" name="last_name">
+    </p>
+    <p>
+        <label>Email</label>
+        <input type="email" name="email">
+    </p>
+    <p>
+        <label>Телефон</label>
+        <input type="tel" name="phone">
+    </p>
+    <p>
+        <label>Пароль</label>
+        <input type="password" name="password">
+    </p>
+    <p>
+        <label>Подтвердите пароль</label>
+        <input type="password" name="password_confirm">
+    </p>
+    <p>
+        <label>Страна</label>
+        <select name="country">
+            <option>Беларусь</option>
+            <option>Россия</option>
+            <option>Германия</option>
+        </select>
+    </p>
+    <button type = "reset">Очистка полей</button>
+</form>
+
+<!-- Опрос -->
+<label>Понравился сайт?</label>
+<label>
+    <input type="radio" name="status" value="Да"> Да
+</label>
+<label>
+    <input type="radio" name="status" value="Нет"> Нет
+</label>
+
+
+<!-- Чекбоксы -->
+<h1>Чекбоксы</h1>
+<p>Выберите необходимые значения:</p>
+<p>
+<label><input type="checkbox" value="one"> - 1</label><br>
+<label><input type="checkbox" value="two"> - 2</label><br>
+<label><input type="checkbox" value="three"> - 3</label>
+</p>
+<button>выбрать</button>
+<!-- Якорная ссылка для скролла вверх -->
+<a href="#bottom">Скролл вверх</a>
+
+<p><button>Зарегистрироваться</button></p>
+
+
+<!-- Дополнительная таблица с информацией о пользователе -->
+<table>
+    <tr>
+        <th>ФИО</th>
+        <td>Куровский Р.А</td>
+    </tr>
+    <tr>
+        <th>Возраст</th>
+        <td>17 лет</td>
+    </tr>
+    <tr>
+        <th>Образование</th>
+        <td>Средне специальное</td>
+    </tr>
+    <tr>
+        <th>Опыт работы</th>
+        <td>Разработка макетов сайта,игры на unity</td>
+    </tr>
+    <tr>
+        <th>Навыки</th>
+        <td>HTML, C#</td>
+    </tr>
+</table>
+
+</body>
+</html>

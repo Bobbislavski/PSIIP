@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9ЛР</title>
+    <style>
+        button {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>ЛР 9</h1>
+
+<!-- скрипты в кнопке -->
+    <button onclick="runCheckNumber()">Проверить число</button>
+    <button onclick="runGetDayName()">Получить название дня</button>
+    <button onclick="runPrintNumbers()">Напечатать числа</button>
+    <button onclick="runCountdown()">Обратный отсчет</button>
+    <button onclick="runPrintEvenNumbers()">Напечатать четные числа</button>
+    <button onclick="runFindFirstEven()">Найти первое четное число</button>
+    <div id="output"></div>
+    <button onclick="eventHandlerScript()">Нажми меня для выполнения скрипта</button>
+
+<!-- скрипт в body -->
+    <script>
+        function eventHandlerScript() {
+            alert('Этот скрипт встроен в body');
+        }
+    </script>
+    
+<!-- подключение из js файла -->
+    <script src="scripts.js"></script>
+</body>
+</html>

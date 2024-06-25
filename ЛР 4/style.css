@@ -1,0 +1,155 @@
+
+h1 {
+    color: #cc3e3e; /* Цвет текста */
+    font-family: 'Courier New', Courier, monospace; /* Шрифт */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Шрифт */
+}
+
+
+.emphasized-text {
+    font-weight: bold; /* Жирное начертание */
+}
+
+
+#bottom {
+    display: block; /* Отображать как блочный элемент */
+}
+
+
+
+a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+
+ul li {
+    list-style-type: circle; /* Маркеры в виде кружков */
+}
+
+
+table > tr {
+    background-color: #f2f2f2; /* Цвет фона */
+}
+
+
+table th:first-child {
+    font-weight: bold; /* Жирный текст для первого элемента в заголовке таблицы */
+}
+
+
+table th:last-child {
+    color: #ff0000; /* Цвет текста для последнего элемента в заголовке таблицы */
+}
+
+
+input[type="text"] {
+    border: 1px solid #ccc; /* Стиль рамки для текстового поля */
+}
+
+
+p, label {
+    margin-bottom: 10px; /* Отступ снизу для параграфов и меток */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif; /* Шрифт текста */
+    background: linear-gradient(to bottom, #c4d8a4, #d7e6a2);
+}
+
+em {
+    font-style: italic; /* Курсивное начертание */
+}
+
+u {
+    text-decoration: underline; /* Подчеркивание */
+}
+
+
+ul {
+    margin-left: 20px; /* Отступ слева для списка */
+}
+
+
+table {
+    border-collapse: collapse; /* Объединение границ ячеек */
+    width: 100%; /* Ширина таблицы */
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+form {
+    border: 1px solid #000; /* Стиль рамки */
+    padding: 20px; /* Внутренний отступ */
+    border-radius: 5px; /* Скругление углов */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+ 
+form h2 {
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #000000; /* Стиль рамки для ячеек */
+    padding: 8px; /* Внутренний отступ */
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #fdfdfd; /* Цвет фона для заголовков таблицы */
+}
+
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select {
+    width: 100%; /* Ширина элементов формы */
+    padding: 10px; /* Внутренний отступ */
+    margin-bottom: 10px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Стиль рамки */
+    border-radius: 5px; /* Скругление углов */
+}
+
+button {
+    background-color: #0210cc; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Внутренний отступ */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+button:hover {
+    background-color: #45a049; /* Цвет фона кнопки при наведении */
+}
+
+
+label {
+    display: block; /* Каждый чекбокс на новой строке */
+    margin-bottom: 5px; /* Отступ снизу */
+}
+
+
+a[href="#bottom"] {
+    color: rgb(0, 0, 0); /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+
+table.additional-info {
+    margin-top: 20px; /* Отступ сверху */
+    width: 100%; /* Ширина таблицы */
+}
+
+
+input[type="radio"] {
+    margin-right: 10px; /* Отступ справа */
+}
+
+
+p {
+    margin-bottom: 15px; /* Отступ снизу */
+}

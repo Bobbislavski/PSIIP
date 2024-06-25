@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задачи</title>
+    <script src="tasks.js" defer></script>
+
+    <script>function showCurrentTime() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+        document.getElementById('time').innerText = `${hours}:${minutes}:${seconds}`;
+    }
+    </script>
+</head>
+<body>
+    <h1>Задание 1</h1>
+    <button onclick="showCurrentTime()">Показать время</button>
+    <p id="time"></p>
+    
+    <h1>Задание 2</h1>
+    <script>  function displayName() {
+        const lastName = "Куровский";  
+        const firstName = "Роберт";  
+        const variant = 12; 
+        let result = "";
+        for (let i = 0; i < 5 + variant; i++) {
+            result += `${lastName} ${firstName}<br>`;
+        }
+        document.getElementById('nameDisplay').innerHTML = result;
+    }
+    </script>
+    <button onclick="displayName()">Показать имя</button>
+    <div id="nameDisplay"></div>
+    
+    <h1>Задание 3</h1>
+    <script>function arrayOperations() {
+        let arr = [];
+        for (let i = 0; i < 9; i++) {
+            arr.push(i + 1);
+        }
+        const evenCount = arr.filter(x => x % 2 === 0).length;
+        const sum = arr.reduce((a, b) => a + b, 0);
+        arr.push(100);
+        document.getElementById('arrayResult').innerText = `Исходный массив: ${arr.slice(0, -1).join(", ")}\nКоличество чётных чисел: ${evenCount}\nСумма элементов: ${sum}\nИзменённый массив: ${arr.join(", ")}`;
+    }
+    </script>
+    <button onclick="arrayOperations()">Показать результаты</button>
+    <pre id="arrayResult"></pre>
+    
+    <h1>Задание 4</h1>
+    <button onclick="showCalculation()">Рассчитать</button>
+    <p id="calculationResult"></p>
+    
+    <h1>Задание 5</h1>
+    <button onclick="stringOperations()">Показать результаты</button>
+    <pre id="stringResult"></pre>
+</body>
+</html>

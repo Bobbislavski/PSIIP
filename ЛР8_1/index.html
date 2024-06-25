@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-form">
+        <h2>ОБРАТНАЯ СВЯЗЬ</h2>
+        <p>Здесь Вы можете отправить нам сообщение</p>
+        <form action="#" method="post">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Введите ваш e-mail" required>
+            
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" placeholder="Введите ваше сообщение" required></textarea>
+            
+            <div class="file-attachment">
+                <label for="file" class="file-label">+ Прикрепить файл</label>
+                <input type="file" id="file" name="file">
+            </div>
+            
+            <div class="captcha-frame">
+                <div class="captcha">
+                    <input type="checkbox" id="not-robot" name="not-robot" required>
+                    <label for="not-robot" class="captcha-label">Я не робот</label>
+                </div>
+                <div class="captcha-image">
+                    <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="CAPTCHA">
+                    <div class="captcha-text">reCAPTCHA</div>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-button">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
